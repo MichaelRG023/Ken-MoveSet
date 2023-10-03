@@ -1,12 +1,20 @@
 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar(){
+
+    
     return(
         <nav>
-            <NavLink to="/">Login</NavLink>
-            <NavLink to ="/FightingMoves">FightingMoves</NavLink>
+            <ul>
+                <li>
+                  <Link   to="/">Login</Link>
+                </li>
+                <li>
+                  <Link to ="/FightingMoves">FightingMoves</Link>
+                </li>
+            </ul>
         </nav>
     );
 }

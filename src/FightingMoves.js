@@ -1,4 +1,4 @@
-
+import React from "react";
 import { useState } from "react";
 import { kenMastersMoveset } from "./data.js";
 import { modernKenMoveset } from "./data.js";
