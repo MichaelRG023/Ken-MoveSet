@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { kenMastersMoveset } from "./data.js";
 import { modernKenMoveset } from "./data.js";
+import "./App.css"
 
 
 function FightingMoves(){
@@ -32,6 +33,11 @@ function FightingMoves(){
             <ul>
                 {kenMastersMoveset.map((moveset) => (
                     <li key={moveset.id}> 
+                    <img
+                    src={moveset.image}
+                    alt={moveset.name}
+                    className="card_image"
+                    />
                     <b> Name: {moveset.name}</b>
                     <p>StartUp: {moveset.startUp}</p>
                     <p>Active: {moveset.active}</p>
@@ -48,6 +54,11 @@ function FightingMoves(){
             <ul>
                 {modernKenMoveset.map((movesetModern) => (
                     <li key={movesetModern.id}>
+                        <img
+                        src={movesetModern.image}
+                        alt={movesetModern.name}
+                        className="moderncard_image"
+                        />
                     <b> Name: {movesetModern.name}</b>
                     <p>StartUp: {movesetModern.startUp}</p>
                     <p>Active: {movesetModern.active}</p>

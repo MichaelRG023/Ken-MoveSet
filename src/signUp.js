@@ -1,5 +1,6 @@
 
-import React,{useState} from "react"
+import React,{useState} from "react";
+import "./App.css"
 
 
 
@@ -43,7 +44,7 @@ function SignUp(){
 
             <label htmlFor="password">password</label>
             <input
-            type="text"
+            type="password"
             id= "password"
             value={formData.password}
             onChange={handleChange}
@@ -51,10 +52,11 @@ function SignUp(){
 
 
 
-            <label htmlFor="type">Avatar Image</label>
+            <label htmlFor="avatar">Avatar Image</label>
             <input
             type="text"
             id="avatar"
+            name="avatar"
             value={formData.avatar}
             onChange={handleChange}
             />

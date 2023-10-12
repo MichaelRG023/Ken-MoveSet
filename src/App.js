@@ -17,7 +17,7 @@ function App() {
     <Router>
      <nav>
       <Header/>
-      <ul>
+      <ul >
         <li>
           <Link to="/">SignUp</Link>
         </li>
