@@ -34,12 +34,12 @@ function FightingMoves(){
                 {kenMastersMoveset.map((moveset) => (
                     <div className="FirstCard" key={moveset.id}> 
                     <h1>Classic</h1>
-                    <img
+                    <img 
                     src={moveset.image}
                     alt={moveset.name}
                     className="card_image"
                     />
-                    <b> Name: {moveset.name}</b>
+                    <h3> Name:{moveset.name}</h3>
                     <p>StartUp: {moveset.startUp}</p>
                     <p>Active: {moveset.active}</p>
                     <p>Recovery: {moveset.recovery}</p>
@@ -61,7 +61,7 @@ function FightingMoves(){
                         alt={movesetModern.name}
                         className="moderncard_image"
                         />
-                     <b> Name: {movesetModern.name}</b>
+                     <h3>Name:{movesetModern.name}</h3>
                      <p>StartUp: {movesetModern.startUp}</p>
                      <p>Active: {movesetModern.active}</p>
                      <p>Recovery: {movesetModern.recovery}</p>

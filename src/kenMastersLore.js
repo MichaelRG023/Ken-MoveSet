@@ -13,7 +13,7 @@ function KenMastersLore(){
                 <h3>Weight {lores.weight}</h3>
                 <h3>Eyecolor{lores.Eyecolor}</h3>
                 <h3>Haircolor{lores.Haircolor}</h3>
-                <h3>Bloodtype{lores.Bloodtype}</h3>
+                <h3>Bloodtype  {lores.Bloodtype}</h3>
                 <h3>Measurements{lores.Measurements}</h3>
                 <h2>Personal</h2> 
                 <h3> First Game {lores.firstgame}</h3>

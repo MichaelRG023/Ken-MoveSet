@@ -56,14 +56,22 @@ header{
   overflow: hidden;
   position: relative;
   transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+  max-width: 13%;
   
 }
-img{
-  height: auto;
-  max-width: 9%;
-  vertical-align: middle;
-}
 
+.moderncard_image{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+  max-width: 13%;
+
+}
 .my-button {
   display: inline-block;
   padding: 8px 15px;
@@ -88,8 +96,7 @@ img{
   grid-template-columns: 10fr 700px;
 }
 .ken-card{
-  height: 300px ; 
-  width: 400px;
+  height: 300px ;
   position: top;
   text-align: center;
 }
