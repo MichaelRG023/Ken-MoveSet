@@ -38,8 +38,9 @@
   }
 }
 body{
-  background-color: #9932CC;
-
+  font-family: "Helvetica", Sans-Serif;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/010/547/365/non_2x/light-purple-to-dark-purple-gradient-background-free-photo.jpg");
+  background-size:4000px;
 }
 
 header{
@@ -52,7 +53,6 @@ header{
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  filter: contrast(70%);
   overflow: hidden;
   position: relative;
   transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
@@ -60,6 +60,54 @@ header{
 }
 img{
   height: auto;
-  max-width: 5%;
+  max-width: 9%;
   vertical-align: middle;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  color: #3498db;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: purple;
+  color: #ffffff;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 10fr 700px;
+}
+.ken-card{
+  height: 300px ; 
+  width: 400px;
+  position: top;
+  text-align: center;
+}
+.characteristics{
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 20px;
+  margin-bottom: 300px
+
+}
+.header-title{
+  background-image: linear-gradient(to top,
+  var(--wds-midnight-color,rgba(var(--theme-accent-color--rgb),.15))54%,
+  transparent 54%, transparent 100%);
+
 }

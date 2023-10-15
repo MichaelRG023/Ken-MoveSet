@@ -1,7 +1,7 @@
  export const kenMastersMoveset = [{ 
     id: 0, 
     image: "https://wiki.supercombo.gg/images/2/20/SF6_Ken_5LP.png",
-    name: "standing light punch",
+    name: "Standing light punch",
     startUp:"4", 
     active: "4-6",
      recovery:"7", 
@@ -42,7 +42,7 @@
  export const modernKenMoveset = [{
    id: 0, 
    image:"https://wiki.supercombo.gg/images/2/20/SF6_Ken_5LP.png",
-   name: "standing light punch",
+   name: "Standing light punch",
    startUp:"4", 
    active: "4-6",
     recovery:"7", 
@@ -77,4 +77,16 @@
     cancel: "no",
      damage: "600"
      
+}];
+
+
+export const kenMasters=[{
+   id: 0,
+   species: "Human",
+   weight: "183lb",
+   Eyecolor: "Blue(Street Fighter 6, Super Smash Brothers Ultimate",
+   Haircolor: "Black,(dyes his hair blond)",
+   Bloodtype: "B",
+   Measurements: "B110／W82／H86 (SFA)[14][21][22]B114／W82／H86 (SFII, SFIV)[1][2]",
+   firstgame: "Street Fighter"
 }];

@@ -6,7 +6,7 @@ function Header(){
 return(
 
     <>
-    <h1 style={{color: 'white'}}>Ken Masters Frame Data</h1>
+    <h1 style={{color: 'black'}}>Ken Masters </h1>
     
     
     </>

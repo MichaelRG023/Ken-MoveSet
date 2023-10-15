@@ -15,6 +15,9 @@ function NavBar(){
                 <li>
                   <Link to ="/FightingMoves">FightingMoves</Link>
                 </li>
+                <li>
+                <Link to ="/KenMasterLore">Lore</Link>
+                </li>
             </ul>
         </nav>
     );
