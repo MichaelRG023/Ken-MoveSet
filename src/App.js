@@ -8,6 +8,7 @@ import KenMastersLore from './kenMastersLore'
 
 
 
+
 // Routes, Routes are version 6 which is what I am using currently 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
            <li>
              <Link to="/fightingMoves">FightingMoves</Link>
            </li>
+           
        </ul>
      </nav>
 

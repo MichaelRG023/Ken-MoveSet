@@ -1,14 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import { kenMastersMoveset } from "./data.js";
+import {kenMastersMoveset} from "./data.js";
 import { modernKenMoveset } from "./data.js";
 import "./App.css"
 
 
-function FightingMoves(){
 
+function FightingMoves(){
+    const [query,setQuery] = useState('');
+    const [searchResults,setSearchResults] = useState([])
     const [showMoves,setShowMoves] = useState(false);
     const [showModern,setShowModern] = useState(false);
+    
 
         // ! operator can save us from additional — or unnecessary — null or undefined case handling.
           const toggleKenData =()=>{
@@ -20,15 +23,40 @@ function FightingMoves(){
                 setShowModern(!showModern);
             };
 
+          const handleInputChange=(e)=>{
+            setQuery(e.target.value)
 
-
-
+          }
+          const handleSearch=()=>{
+            const results = kenMastersMoveset.filter((item)=>
+            item.name.toLowerCase().includes(query.toLowerCase())
+            );
+            setSearchResults(results);
+          }
+          
     return (
         
-     <div>
+     <div >
         <button className="my-button"onClick={toggleKenData}>{showMoves? 'Classic' : "Classic"} </button>
-        <button className="my-button" onClick={toggleModernKenData}>{showModern? 'Modern': 'Modern'} </button>  
-        
+        <button className="my-button" onClick={toggleModernKenData}>{showModern? 'Modern': 'Modern'} </button> 
+        <label>Search</label>
+        <input className="search-bar"
+        type="text"
+        placeholder="Enter your search"
+        value={query}
+        onChange={handleInputChange}
+        />
+        <button onClick={handleSearch}></button>
+        <h2 className="search-results">Search Results</h2>
+        <ul>
+            {searchResults.map((result)=>(
+                <div key={result.id}>{result.name}</div>
+            ))}
+        </ul>
+
+
+
+
         {showMoves && (
             <ul className="grid">
                 {kenMastersMoveset.map((moveset) => (
@@ -45,7 +73,7 @@ function FightingMoves(){
                     <p>Recovery: {moveset.recovery}</p>
                     <p>Cancel: {moveset.cancel}</p>
                     <p>Damage: {moveset.damage}</p>
-                    {/* {showMoves === "FirstCard"&& <FightingMoves toggleKenData={kenMastersMoveset} title="Classic"/>} */}
+                  
                     </div>
                 ))}
             </ul>
@@ -82,7 +110,7 @@ function FightingMoves(){
     );   
 
 }
-console.log("moves",kenMastersMoveset)
+
 
 
 

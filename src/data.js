@@ -1,4 +1,4 @@
- export const kenMastersMoveset = [{ 
+  export const  kenMastersMoveset = [{ 
     id: 0, 
     image: "https://wiki.supercombo.gg/images/2/20/SF6_Ken_5LP.png",
     name: "Standing light punch",
@@ -35,6 +35,24 @@
      recovery: "20", 
      cancel: "no",
       damage: "600"
+ }, {
+   id:4,
+   image:"https://wiki.supercombo.gg/images/6/6c/SF6_Ken_5hp.png",
+   name:"Standing Heavy Kick",
+   startUp:"10",
+   active: "10-14",
+   recovery:"17",
+   cancel:"yes",
+   damage:"800"
+ }, {
+   id:5,
+   image:"https://wiki.supercombo.gg/images/4/4c/SF6_Ken_5hk.png",
+   name:"Standing Heavy Kick ",
+   startUp:"12",
+   active: "12-13",
+   recovery:"23",
+   cancel:"no",
+   damage:"800"
  }];   
     
 
@@ -90,3 +108,6 @@ export const kenMasters=[{
    Measurements: "B110／W82／H86 (SFA)[14][21][22]B114／W82／H86 (SFII, SFIV)[1][2]",
    firstgame: "Street Fighter"
 }];
+
+
+
