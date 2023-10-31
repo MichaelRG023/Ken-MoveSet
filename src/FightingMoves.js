@@ -9,8 +9,8 @@ import "./App.css"
 function FightingMoves(){
     const [query,setQuery] = useState('');
     const [searchResults,setSearchResults] = useState([])
-    const [showMoves,setShowMoves] = useState(false);
-    const [showModern,setShowModern] = useState(false);
+    const [showMoves,setShowMoves] = useState('');
+    const [showModern,setShowModern] = useState('');
     
 
         // ! operator can save us from additional — or unnecessary — null or undefined case handling.
@@ -26,14 +26,18 @@ function FightingMoves(){
           const handleInputChange=(e)=>{
             setQuery(e.target.value)
 
-          }
-          const handleSearch=()=>{
-            const results = kenMastersMoveset.filter((item)=>
+          }  
+          const handleSearch=(thing)=>{
+
+            if (thing ===''){
+                setSearchResults([])
+            }else {
+            const results = kenMastersMoveset.filter(item =>
             item.name.toLowerCase().includes(query.toLowerCase())
             );
             setSearchResults(results);
-          }
-          
+          }  
+        }  
     return (
         
      <div >
@@ -46,13 +50,24 @@ function FightingMoves(){
         value={query}
         onChange={handleInputChange}
         />
-        <button onClick={handleSearch}></button>
+        <button onClick={handleSearch}>Search</button>
         <h2 className="search-results">Search Results</h2>
+        {searchResults &&
         <ul>
             {searchResults.map((result)=>(
-                <div key={result.id}>{result.name}</div>
+                <div key={result.id}>
+                    <div>
+                        <h1>{result.name}</h1>
+                        <img
+                        src={result.image}
+                        alt="moveset"
+                        className="card_image"
+                        />
+                    </div>
+                </div>
             ))}
         </ul>
+        }
 
 
 

@@ -27,7 +27,7 @@ function KenMastersLore(){
 
 
 return(
-    <div >
+    <div>
      <h1 className="header-title">
         <span>Ken Masters</span>
      </h1>

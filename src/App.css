@@ -96,7 +96,7 @@ header{
   grid-template-columns: 10fr 700px;
 }
 .ken-card{
-  height: 300px ;
+  height: 420px ;
   position: top;
   text-align: center;
 }
@@ -117,4 +117,12 @@ header{
   var(--wds-midnight-color,rgba(var(--theme-accent-color--rgb),.15))54%,
   transparent 54%, transparent 100%);
 
+}
+.FirstCard{
+  color: purple;
+  
+}
+
+.Second-Card{
+  color: purple;
 }
