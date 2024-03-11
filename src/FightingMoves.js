@@ -43,6 +43,7 @@ function FightingMoves(){
      <div >
         <button className="my-button"onClick={toggleKenData}>{showMoves? 'Classic' : "Classic"} </button>
         <button className="my-button" onClick={toggleModernKenData}>{showModern? 'Modern': 'Modern'} </button> 
+        <button className="my-button">Command List</button>
         <label>Search</label>
         <input className="search-bar"
         type="text"

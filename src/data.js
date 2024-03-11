@@ -55,7 +55,12 @@
    damage:"800"
  }];   
     
-
+export const commandList =[{
+  id: 0,
+  name:"hadoken",
+  move:"⇓⇘⇒+",
+  video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/501.mp4"
+}]
 
  export const modernKenMoveset = [{
    id: 0, 

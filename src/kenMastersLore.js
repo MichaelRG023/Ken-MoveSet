@@ -53,6 +53,8 @@ return(
           <p> Ken was originally named Yu (ユウ), being named after Street Fighter planner Hiroshi Matsumoto. However, Hiroshi changed Ken's name to mean "fist" instead during development.[31][32] He gained his last name when toy company Hasbro got the license to add the characters from Street Fighter II to their G.I. Joe toyline. It is widely believed, though never confirmed, that the name was given to avoid copyright confusion with the character Ken Carson from Mattel's Barbie toyline. It is also widely believed (and unconfirmed) that the name stems from Mattel's Masters of the Universe toyline, in reference to the character He-Man.</p>
           <h3>Personality</h3>
           <p>While Ryu is the more serious and stoic of the two, Ken is the complete opposite - stylish, unorthodox and unpredictable, as well as being much more violent and aggressive than Ryu. He is an alpha male with a giant ego and constantly reminds his opponents about his greatness. While he can be brash, egotistical and arrogant at times, his heart is pure. He is generally kind, friendly, a good person and very easygoing which led him into starting a family of his own. He never backs down from a fight no matter how difficult it looks.</p>
+          <br></br>
+          <em className='bottom-text'>this is a small project to show who Ken Masters is!! Hope you all enjoy!</em>
           
     </div>
 )

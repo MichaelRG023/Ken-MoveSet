@@ -9,7 +9,7 @@ function NavBar(){
     return(
         <nav>
             <ul>
-                <li className="li">
+                <li>
                   <Link to="/">Sign Up</Link>
                 </li>
                 <li>
