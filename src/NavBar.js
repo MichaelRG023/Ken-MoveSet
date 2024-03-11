@@ -9,8 +9,8 @@ function NavBar(){
     return(
         <nav>
             <ul>
-                <li>
-                  <Link to="/">SignUp</Link>
+                <li className="li">
+                  <Link to="/">Sign Up</Link>
                 </li>
                 <li>
                   <Link to ="/FightingMoves">FightingMoves</Link>

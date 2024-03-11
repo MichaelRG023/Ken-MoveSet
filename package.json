@@ -1,5 +1,5 @@
 {
-  "homepage":"https://MichaelRG023.github.io/Ken-MoveSet",
+  "homepage": "https://MichaelRG023.github.io/Ken-MoveSet",
   "name": "ecommerce",
   "version": "0.1.0",
   "private": true,
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "tailwindcss": "^3.3.5"
   }
 }

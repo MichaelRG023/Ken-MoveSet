@@ -3,10 +3,7 @@
  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -96,7 +93,7 @@ header{
   grid-template-columns: 10fr 700px;
 }
 .ken-card{
-  height: 420px ;
+  height: 430px ;
   position: top;
   text-align: center;
 }
@@ -119,10 +116,25 @@ header{
 
 }
 .FirstCard{
-  color: purple;
+  color: black;
+  font-size: 18px;
+  
   
 }
 
 .Second-Card{
-  color: purple;
+  color: black;
+  font-size: 18px;
+  
+}
+
+ul{
+  list-style-type: none;
+}
+
+.search-bar{
+  width: 150px;
+  display: inline-block;
+  margin-top: 50px;
+
 }
