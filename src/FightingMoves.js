@@ -46,14 +46,16 @@ function FightingMoves(){
         <button className="my-button" onClick={toggleModernKenData}>{showModern? 'Modern': 'Modern'} </button> 
         <button className="my-button">Command List</button>
         <label>Search</label>
-        <input className="search-bar"
-        type="text"
-        placeholder="Enter your search"
-        value={query}
-        onChange={handleInputChange}
-        />
-        <button onClick={handleSearch}>Search</button>
+        
+        
         <h2 className="search-results">Search Results</h2>
+         <input className="search-bar"
+             type="text"
+             placeholder="Enter your search"
+             value={query}
+             onChange={handleInputChange}
+          />
+        <button onClick={handleSearch}>Search</button>
 
         {searchResults &&
         <ul>

@@ -7,6 +7,8 @@ return(
 
     <>
     <h1 style={{color: 'black'}}>Ken Masters </h1>
+
+    <p>A project made by Michael Gonzalez</p>
     
     
     
