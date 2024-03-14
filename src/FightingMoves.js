@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import {kenMastersMoveset} from "./data.js";
 import { modernKenMoveset } from "./data.js";
+import { commandList } from "./data.js";
 import "./App.css"
 
 
@@ -9,18 +10,18 @@ import "./App.css"
 function FightingMoves(){
     const [query,setQuery] = useState('');
     const [searchResults,setSearchResults] = useState([])
-    const [showMoves,setShowMoves] = useState('');
-    const [showModern,setShowModern] = useState('');
+    const [showMoves,setShowMoves] = useState(false);
+    const [showModern,setShowModern] = useState(false);
+    const [showCommand,setShowCommand] = useState("");
     
 
         // ! operator can save us from additional — or unnecessary — null or undefined case handling.
           const toggleKenData =()=>{
            setShowMoves(!showMoves);
-
             };
         
             const toggleModernKenData =()=>{
-                setShowModern(!showModern);
+                setShowModern(!showModern) ;
             };
 
           const handleInputChange=(e)=>{
@@ -53,6 +54,7 @@ function FightingMoves(){
         />
         <button onClick={handleSearch}>Search</button>
         <h2 className="search-results">Search Results</h2>
+
         {searchResults &&
         <ul>
             {searchResults.map((result)=>(
@@ -69,10 +71,6 @@ function FightingMoves(){
             ))}
         </ul>
         }
-
-
-
-
         {showMoves && (
             <ul className="grid">
                 {kenMastersMoveset.map((moveset) => (

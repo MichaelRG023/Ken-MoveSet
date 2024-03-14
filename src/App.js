@@ -21,10 +21,10 @@ function App() {
       <Header/>
        <ul >
         <li>
-         <Link to="/">SignUp</Link>
+         <Link to="/">Lore</Link>
         </li>
           <li>
-           <Link to="/Lore">Lore</Link>
+           <Link to="/signup">SignUp</Link>
           </li>
            <li>
              <Link to="/fightingMoves">FightingMoves</Link>
@@ -35,9 +35,9 @@ function App() {
 
 
      <Routes>
-      <Route path='lore' element={<KenMastersLore/>}/>
-      <Route path='fightingMoves' element={<FightingMoves/>}/>
-      <Route path="/" element={<SignUp/>}/>
+      <Route path='/' element={<KenMastersLore/>}/>
+      <Route path='/fightingMoves' element={<FightingMoves/>}/>
+      <Route path="/signup" element={<SignUp/>}/>
       
      </Routes>
 

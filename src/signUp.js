@@ -40,6 +40,7 @@ function SignUp(){
             id="username"
             value={formData.username}
             onChange={handleChange}
+            placeholder="enter your username..."
             />
 
             <label htmlFor="password">password</label>
@@ -48,19 +49,22 @@ function SignUp(){
             id= "password"
             value={formData.password}
             onChange={handleChange}
+            placeholder="password..."
             />
 
 
 
-            <label htmlFor="avatar">Avatar Image</label>
+            <label htmlFor="avatars">Avatar Image</label>
             <input
             type="text"
             id="avatar"
             name="avatar"
             value={formData.avatar}
             onChange={handleChange}
+            placeholder="enter your image here..."
             />
             <img
+            className="avatar-image"
             src={formData.avatar ||
             "https://www.kindpng.com/picc/m/78-785827_user-profile-avatar-login-account-male-user-icon.png"
             }

@@ -59,7 +59,33 @@ export const commandList =[{
   id: 0,
   name:"hadoken",
   move:"⇓⇘⇒+",
-  video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/501.mp4"
+  video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/501.mp4",
+  description:" Fire a ki blast directly forward. Useful for attacking opponents at range."
+},{
+  id:1,
+  name:"Shoryuken",
+  move:"",
+  video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/502.mp4",
+  description:"Leap into the sky with a devastating uppercut. Useful as an anti-air attack or as a way to end combos."
+},{
+  id: 2,
+  name:"Tatsumaki Senput-Kyaku",
+  move:"",
+  video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/503.mp4",
+  description:"Unleash a series of roundhouse kicks while moving forward. Useful when canceled into from normal moves to create combos."
+},{
+
+  id: 3,
+  name:"Dragonlash Kick",
+  move:"",
+  video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/505.mp4",
+  description:"A leaping roundhouse kick that pulls your opponent toward you. An extremely versatile move that can be used to launch suprise attacks from mid-range, as a way to continue your offensive pressure, or in combos."
+},{
+  id:4,
+  name:"Jinrai Kick",
+  move:"",
+  video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/506.mp4",
+  description:"A forward-moving roundhouse kick that can be followed up by one of three different kicks." 
 }]
 
  export const modernKenMoveset = [{
