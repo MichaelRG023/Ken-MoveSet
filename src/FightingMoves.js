@@ -12,7 +12,7 @@ function FightingMoves(){
     const [searchResults,setSearchResults] = useState([])
     const [showMoves,setShowMoves] = useState(false);
     const [showModern,setShowModern] = useState(false);
-    const [showCommand,setShowCommand] = useState("");
+    const [showCommand,setShowCommand] = useState(false);
     
 
         // ! operator can save us from additional — or unnecessary — null or undefined case handling.
@@ -28,6 +28,10 @@ function FightingMoves(){
             setQuery(e.target.value)
 
           }  
+
+          const toggleCommandList=()=>{
+            setShowCommand(!showCommand)
+          }
           const handleSearch=(thing)=>{
 
             if (thing ===''){
@@ -44,8 +48,8 @@ function FightingMoves(){
      <div >
         <button className="my-button"onClick={toggleKenData}>{showMoves? 'Classic' : "Classic"} </button>
         <button className="my-button" onClick={toggleModernKenData}>{showModern? 'Modern': 'Modern'} </button> 
-        <button className="my-button">Command List</button>
-        <label>Search</label>
+        <button className="my-button" onClick={toggleCommandList}>Command List</button>
+        
         
         
         <h2 className="search-results">Search Results</h2>
@@ -116,7 +120,23 @@ function FightingMoves(){
 
 
             </ul>
+        
             
+        )}
+        {showCommand &&(
+            <ul>
+                {commandList.map((listCommand) =>(
+                    <div key={listCommand.id}>
+                        <p>{listCommand.name}</p>
+                        <p>{listCommand.move}</p>
+                        <video>{listCommand.video}</video>
+                        <p>{listCommand.description}</p>
+                    </div>
+
+                ))}
+                
+            </ul>
+
         )}
        
         

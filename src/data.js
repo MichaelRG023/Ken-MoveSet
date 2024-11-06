@@ -86,9 +86,9 @@ export const commandList =[{
   move:"",
   video:"https://www.streetfighter.com/6/assets/images/character/ken/skill/movie/506.mp4",
   description:"A forward-moving roundhouse kick that can be followed up by one of three different kicks." 
-}]
+}];
 
- export const modernKenMoveset = [{
+ export const modernKenMoveset =[{
    id: 0, 
    image:"https://wiki.supercombo.gg/images/2/20/SF6_Ken_5LP.png",
    name: "Standing light punch",
